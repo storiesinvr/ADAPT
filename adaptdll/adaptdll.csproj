@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A0C0DE1-2B46-499B-9ACF-C2DA89E6F75E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>adaptdll</RootNamespace>
+    <AssemblyName>adaptdll</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.CSharp" />
+    <Reference Include="Mono.Ssdp">
+      <HintPath>..\..\..\..\..\..\..\..\..\git\sessionmanager\packages\Mono.Ssdp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Character\Body.cs">
+      <Link>Character\Body.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Character\Coordinator.cs">
+      <Link>Character\Coordinator.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\UI\RecastNavmeshPlatformController.cs">
+      <Link>UI\RecastNavmeshPlatformController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\UI\UnityNavmeshPlatformController.cs">
+      <Link>UI\UnityNavmeshPlatformController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Animation\ShadowAnimationController.cs">
+      <Link>Controllers\ShadowAnimationController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Dummy\ShadowDummyController.cs">
+      <Link>Controllers\ShadowDummyController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\HeadLook\Include\BendingSegment.cs">
+      <Link>Controllers\HeadLook_include\BendingSegment.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\HeadLook\Include\NonAffectedJoint.cs">
+      <Link>Controllers\HeadLook_include\NonAffectedJoint.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\HeadLook\ShadowHeadLookController.cs">
+      <Link>Controllers\ShadowHeadLookController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Idle\ShadowIdleController.cs">
+      <Link>Controllers\ShadowIdleController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\AlignmentTracker.cs">
+      <Link>Controllers\Locomotion_include\AlignmentTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\GhostOriginal.cs">
+      <Link>Controllers\Locomotion_include\GhostOriginal.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\IMotionAnalyzer.cs">
+      <Link>Controllers\Locomotion_include\IMotionAnalyzer.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\Interpolator.cs">
+      <Link>Controllers\Locomotion_include\Interpolator.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\LegController.cs">
+      <Link>Controllers\Locomotion_include\LegController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\LocomotionUtil.cs">
+      <Link>Controllers\Locomotion_include\LocomotionUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\MotionAnalyzer.cs">
+      <Link>Controllers\Locomotion_include\MotionAnalyzer.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\MotionAnalyzerBackwards.cs">
+      <Link>Controllers\Locomotion_include\MotionAnalyzerBackwards.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\PolarGradientBandInterpolator.cs">
+      <Link>Controllers\Locomotion_include\PolarGradientBandInterpolator.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\TrajectoryVisualizer.cs">
+      <Link>Controllers\Locomotion_include\TrajectoryVisualizer.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Legacy\LegAnimator.cs">
+      <Link>Controllers\Legacy\LegAnimator.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\ShadowLocomotionController.cs">
+      <Link>Controllers\ShadowLocomotionController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Ragdoll\ShadowRagdollController.cs">
+      <Link>Controllers\Ragdoll\ShadowRagdollController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Ragdoll\Include\CollisionDetector.cs">
+      <Link>Controllers\Ragdoll\Include\CollisionDetector.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Ragdoll\Include\CollisionNotifier.cs">
+      <Link>Controllers\Ragdoll\Include\CollisionNotifier.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Reach\ShadowReachController.cs">
+      <Link>Controllers\Reach\ShadowReachController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Sitting\ShadowSittingController.cs">
+      <Link>Controllers\Sitting\ShadowSittingController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Debug\GizmoDraw.cs">
+      <Link>Debug\GizmoDraw.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Debug\LockPosition.cs">
+      <Link>Debug\LockPosition.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Debug\ToggleRender.cs">
+      <Link>Debug\ToggleRender.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IK1JointAnalytic.cs">
+      <Link>IK\IK1JointAnalytic.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IKCCD3D.cs">
+      <Link>IK\IKCCD3D.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IKJoint.cs">
+      <Link>IK\IKJoint.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IKSimple.cs">
+      <Link>IK\IKSimple.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IKSolver.cs">
+      <Link>IK\IKSolver.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\RecastSteeringController.cs">
+      <Link>Navigation\Recast\RecastSteeringController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\Include\Steering\RecastSteeringManager.cs">
+      <Link>Navigation\Recast\Include\Steering\RecastSteeringManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\Include\NavMesh\NavMesh.cs">
+      <Link>Navigation\Recast\Include\NavMesh\NavMesh.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\Include\NavMesh\NavMeshBuilder.cs">
+      <Link>Navigation\Recast\Include\NavMesh\NavMeshBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\Include\NavMesh\NavMeshDebugRenderer.cs">
+      <Link>Navigation\Recast\Include\NavMesh\NavMeshDebugRenderer.cs</Link>
+    </Compile>
+
+
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\SteeringController.cs">
+      <Link>Navigation\SteeringController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Unity\UnitySteeringController.cs">
+      <Link>Navigation\Unity\UnitySteeringController.cs</Link>
+    </Compile>
+    <!-- Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile -->
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Include\BlendSystem.cs">
+      <Link>Shadow\Include\BlendSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Include\FilterList.cs">
+      <Link>Shadow\Include\FilterList.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Shadow.cs">
+      <Link>Shadow\Shadow.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\ShadowController.cs">
+      <Link>Shadow\ShadowController.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\ShadowCoordinator.cs">
+      <Link>Shadow\ShadowCoordinator.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Debug\ShadowGizmo.cs">
+      <Link>Shadow\Debug\ShadowGizmo.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Debug\ShadowRender.cs">
+      <Link>Shadow\Debug\ShadowRender.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\ShadowTransform.cs">
+      <Link>Shadow\ShadowTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Include\Slider.cs">
+      <Link>Shadow\Include\Slider.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Behavior\" />
+    <Folder Include="SmartObject\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
