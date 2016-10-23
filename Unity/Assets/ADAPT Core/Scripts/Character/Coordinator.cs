@@ -98,14 +98,18 @@ public class Coordinator : ShadowCoordinator
         ShadowTransform[] anim = this.BlendAnimations(lg);
         ShadowTransform[] head = this.BlendHeadLook(anim);
         ShadowTransform[] reach = this.BlendReach(head);
-        ShadowTransform[] rag = this.BlendRagdoll(reach);
 
-        // Special management of the ragdoll controller for telling it
-        // that it's fully faded out and done falling
-        if (this.dWeight.IsMin == true)
-            this.ragdoll.IsFalling = false;
+        ShadowTransform[] rag;
+        if (this.ragdoll) { 
+            rag = this.BlendRagdoll(reach);
+    
+            // Special management of the ragdoll controller for telling it
+            // that it's fully faded out and done falling
+            if (this.dWeight.IsMin == true)
+                this.ragdoll.IsFalling = false;
 
-        Shadow.ReadShadowData(rag, this.hips, this);
+            Shadow.ReadShadowData(rag, this.hips, this);
+        }
     }
 
     private ShadowTransform[] BlendLegsAndSitting()
