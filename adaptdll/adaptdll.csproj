@@ -48,161 +48,210 @@
   <ItemGroup>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Character\Body.cs">
       <Link>Character\Body.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Character\Coordinator.cs">
       <Link>Character\Coordinator.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\UI\RecastNavmeshPlatformController.cs">
       <Link>UI\RecastNavmeshPlatformController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\UI\UnityNavmeshPlatformController.cs">
       <Link>UI\UnityNavmeshPlatformController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Animation\ShadowAnimationController.cs">
       <Link>Controllers\ShadowAnimationController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Dummy\ShadowDummyController.cs">
       <Link>Controllers\ShadowDummyController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\HeadLook\Include\BendingSegment.cs">
       <Link>Controllers\HeadLook_include\BendingSegment.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\HeadLook\Include\NonAffectedJoint.cs">
       <Link>Controllers\HeadLook_include\NonAffectedJoint.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\HeadLook\ShadowHeadLookController.cs">
       <Link>Controllers\ShadowHeadLookController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Idle\ShadowIdleController.cs">
       <Link>Controllers\ShadowIdleController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\AlignmentTracker.cs">
       <Link>Controllers\Locomotion_include\AlignmentTracker.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\GhostOriginal.cs">
       <Link>Controllers\Locomotion_include\GhostOriginal.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\IMotionAnalyzer.cs">
       <Link>Controllers\Locomotion_include\IMotionAnalyzer.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\Interpolator.cs">
       <Link>Controllers\Locomotion_include\Interpolator.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\LegController.cs">
       <Link>Controllers\Locomotion_include\LegController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\LocomotionUtil.cs">
       <Link>Controllers\Locomotion_include\LocomotionUtil.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\MotionAnalyzer.cs">
       <Link>Controllers\Locomotion_include\MotionAnalyzer.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\MotionAnalyzerBackwards.cs">
       <Link>Controllers\Locomotion_include\MotionAnalyzerBackwards.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\PolarGradientBandInterpolator.cs">
       <Link>Controllers\Locomotion_include\PolarGradientBandInterpolator.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Include\TrajectoryVisualizer.cs">
       <Link>Controllers\Locomotion_include\TrajectoryVisualizer.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\Legacy\LegAnimator.cs">
       <Link>Controllers\Legacy\LegAnimator.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Locomotion\ShadowLocomotionController.cs">
       <Link>Controllers\ShadowLocomotionController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Ragdoll\ShadowRagdollController.cs">
       <Link>Controllers\Ragdoll\ShadowRagdollController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Ragdoll\Include\CollisionDetector.cs">
       <Link>Controllers\Ragdoll\Include\CollisionDetector.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Ragdoll\Include\CollisionNotifier.cs">
       <Link>Controllers\Ragdoll\Include\CollisionNotifier.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Reach\ShadowReachController.cs">
       <Link>Controllers\Reach\ShadowReachController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Controllers\Sitting\ShadowSittingController.cs">
       <Link>Controllers\Sitting\ShadowSittingController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Debug\GizmoDraw.cs">
       <Link>Debug\GizmoDraw.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Debug\LockPosition.cs">
       <Link>Debug\LockPosition.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Debug\ToggleRender.cs">
       <Link>Debug\ToggleRender.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IK1JointAnalytic.cs">
       <Link>IK\IK1JointAnalytic.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IKCCD3D.cs">
       <Link>IK\IKCCD3D.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IKJoint.cs">
       <Link>IK\IKJoint.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IKSimple.cs">
       <Link>IK\IKSimple.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\IK\IKSolver.cs">
       <Link>IK\IKSolver.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\RecastSteeringController.cs">
       <Link>Navigation\Recast\RecastSteeringController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\Include\Steering\RecastSteeringManager.cs">
       <Link>Navigation\Recast\Include\Steering\RecastSteeringManager.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\Include\NavMesh\NavMesh.cs">
       <Link>Navigation\Recast\Include\NavMesh\NavMesh.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\Include\NavMesh\NavMeshBuilder.cs">
       <Link>Navigation\Recast\Include\NavMesh\NavMeshBuilder.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Recast\Include\NavMesh\NavMeshDebugRenderer.cs">
       <Link>Navigation\Recast\Include\NavMesh\NavMeshDebugRenderer.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-
-
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\SteeringController.cs">
       <Link>Navigation\SteeringController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Navigation\Unity\UnitySteeringController.cs">
       <Link>Navigation\Unity\UnitySteeringController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <!-- Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile -->
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Include\BlendSystem.cs">
       <Link>Shadow\Include\BlendSystem.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Include\FilterList.cs">
       <Link>Shadow\Include\FilterList.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Shadow.cs">
       <Link>Shadow\Shadow.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\ShadowController.cs">
       <Link>Shadow\ShadowController.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\ShadowCoordinator.cs">
       <Link>Shadow\ShadowCoordinator.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Debug\ShadowGizmo.cs">
       <Link>Shadow\Debug\ShadowGizmo.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Debug\ShadowRender.cs">
       <Link>Shadow\Debug\ShadowRender.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\ShadowTransform.cs">
       <Link>Shadow\ShadowTransform.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="..\Unity\Assets\ADAPT Core\Scripts\Shadow\Include\Slider.cs">
       <Link>Shadow\Include\Slider.cs</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
   <ItemGroup>
